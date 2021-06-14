@@ -1,0 +1,153 @@
+:root {
+  // --bg: #0d1117;
+  // --text-color: #cdd6e2;
+  --text-color: rgb(26, 32, 44);
+  --text-color-light: rgb(255, 255, 255);
+  --bg: rgb(255, 255, 255);
+  --secondary: rgb(51, 113, 255);
+  --secondary-darker: rgb(2 40 115);
+  // --secondary: #00c58e;
+  --primary: #A5E01D;
+  --dark: rgb(26, 32, 44);
+  --grey: rgb(80 80 80);
+  --content-width: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  color: var(--text-color);
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+#__next {
+  width: 100%;
+  overflow: hidden;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Catamaran", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: calc(100vh - 21rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.content {
+  width: var(--content-width);
+}
+
+.section__title {
+  padding-top: 5rem;
+  font-size: clamp(2rem, 7vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+
+
+.btn {
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.2rem;
+  color: white;
+  transition: 300ms filter;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(150%);
+  }
+}
+
+
+.btn-outline{
+  border: 1px solid var(--bg);
+}
+
+.btn__light {
+  background: var(--secondary);
+}
+
+.btn__lighter {
+  color: var(--bg) !important;
+  background: var(--text-color);
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin-right: 10px;
+    width: 1.2rem;
+    fill: var(--secondary);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --content-width: 75%;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --content-width: 1400px;
+  }
+}

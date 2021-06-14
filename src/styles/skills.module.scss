@@ -1,0 +1,93 @@
+.skillsIcons {
+  width: 100%;
+  margin: 2rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(7.5rem), 8rem));
+  align-items: center;
+}
+
+.skillsIcon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.skillsIcon svg {
+  opacity: 0.7;
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+  width: 100%;
+  height: 100%;
+  transition: 200ms;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  path {
+    fill: var(--text-color);
+  }
+}
+
+.tooltip {
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &::after {
+    text-align: center;
+    z-index: 20;
+    position: absolute;
+    content: attr(aria-label);
+    opacity: 0;
+    width: 100%;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 200ms;
+    background: var(--secondary);
+    color: var(--text-color);
+    padding: 7px 10px;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 16px rgb(22, 27, 34, 0.2);
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+}
+
+.lg::after {
+  width: 200px;
+}
+
+.skillsIcon:focus::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .skillsIcons {
+    grid-template-columns: repeat(auto-fill, minmax(min(5rem), 6rem));
+    justify-content: center;
+
+    svg {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+
+.softSkillItem{
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 0px 0.5rem 0.5rem;
+  border-radius: 99px;
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
