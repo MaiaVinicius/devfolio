@@ -32,6 +32,10 @@ class MaiaViniciusDotMe extends Document {
           <Main />
           <NextScript />
         </body>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2D5W9GCKX"></script>
+        <script src="/ga.js"/>
+
       </Html>
     );
   }

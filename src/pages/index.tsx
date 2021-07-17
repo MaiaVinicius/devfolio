@@ -1,24 +1,24 @@
 import * as React from "react";
 import { NextPage } from "next";
-import { useEmitEvent } from "@casper124578/useful/hooks/useEmitEvent";
 import TimelineSection from "@sections/TimelineSection";
 import ProjectSection from "@sections/ProjectsSection";
 import ContactSection from "@sections/ContactSection";
 import SkillsSection from "@sections/SkillsSection";
-import { ContactIcon, GitHubIcon, LinkedInIcon, TwitterIcon } from "@icons/about";
+import { ContactIcon, GitHubIcon, LinkedInIcon } from "@icons/about";
 import Seo from "@components/Seo";
 import mainStyles from "css/main.module.scss";
 
 const Index: NextPage = () => {
   const age = calculateAge();
-  const { dispatch } = useEmitEvent("focusOnContact", true);
   const startedAge = 15;
 
   function calculateAge() {
-    return ((Date.now() - +new Date("12/04/1999")) / (60 * 60 * 24 * 365 * 1000))
+    return parseInt(((Date.now() - +new Date("12/04/1999")) / (60 * 60 * 24 * 365 * 1000))
       .toString()
-      .split(".")[0];
+      .split(".")[0]);
   }
+
+  const monthsActive = age - startedAge;
 
   return (
     <>
@@ -39,7 +39,7 @@ const Index: NextPage = () => {
           <br/>
 
           I live in Rio de Janeiro 🇧🇷 , <em>{age} years old</em> and dropped my first <em>"Hello World!"</em> 💻 at the age of {startedAge}. I'm a self taught
-          developer and I have been programming for <strong>~{(age - startedAge)} years</strong> and still learning new technologies
+          developer and I have been programming for <strong>~{monthsActive} years</strong> and still learning new technologies
           every day. 
           
         </p>

@@ -7,7 +7,7 @@ const VIEW_CODE = "View code";
 const projects: Project[] = [
   {
     title: "digital-wallet-api",
-    description: "An API that provides connection with multiple banks and investment broker from Brazil. The objetive was to centralize personal financial data 💰",
+    description: "An API that provides connection with multiple banks and investment broker from Brazil. The objective was to centralize personal financial data 💰",
     languages: [
       {
         name: "Node.js"

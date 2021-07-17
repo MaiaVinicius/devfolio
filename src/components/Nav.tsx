@@ -71,11 +71,7 @@ const Nav: FC = () => {
                 Contact
               </a>
             </Link>
-            <Link href="/experience">
-              <a href="/experience" className={styles.navLink}>
-                Experience
-              </a>
-            </Link>
+            
           </div>
 
           <button onClick={handleHamburgerClick} className={styles.hamburger}>

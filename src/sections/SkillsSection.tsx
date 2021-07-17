@@ -1,20 +1,9 @@
 import { FC } from "react";
-import {
-  BootstrapIcon,
-  CSSIcon,
-  DatabaseIcon,
-  GitIcon,
-  HtmlIcon,
-  JavaScriptIcon,
-  NodejsIcon,
-  NpmIcon,
-  ReactIcon,
-  TerminalIcon,
-  TypescriptIcon,
-} from "@icons/skills";
+
 import styles from "css/skills.module.scss";
-import { classes } from "src/lib/classes";
+// import { classes } from "src/lib/classes";
 import skills from "../data/skills";
+import levels from "../data/skill_levels";
 
 const SoftSkills = () => {
   const softSkills = [
@@ -31,42 +20,19 @@ const SoftSkills = () => {
   });
 }
 
+
 const getLevel = (level) => {
-  const levels = {
-    1: {
-      "description": "Curious",
-      "color": ""
-    },
-    2: {
-      "description": "Beginner",
-      "color": ""
-    },
-    3: {
-      "description": "Intermediate",
-      "color": ""
-    },
-    4: {
-      "description": "Advanced",
-      "color": ""
-    },
-    5: {
-      "description": "Expert",
-      "color": ""
-    },
-    
-  }
+  
   return levels[level];
 }
 
-
 const HardSkills = (props) => {
 
-  return (<div></div>)
-  // return props.skillsList.map((skill) => {
-  //   return (
-  //     <div>{skill.category}</div>
-  //   );
-  // })
+   return props.items.map((skill) => {
+     return (
+       <div className={styles.skillItem} style={{backgroundColor: props.color}}>{skill.name}</div>
+     );
+  })
 };
 
 const HardSkillsSection = () => {
@@ -78,7 +44,7 @@ const HardSkillsSection = () => {
       <div>
         <div>{category.category}</div>
       
-        <HardSkills items={category.items}/>
+        <HardSkills color={category.color} items={category.items}/>
       </div>
     );
   })

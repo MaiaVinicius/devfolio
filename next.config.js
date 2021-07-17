@@ -2,6 +2,9 @@
 const withPWA = require("next-pwa");
 
 const config = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   async redirects() {
     return [
       {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "css/footer.module.scss";
 
 const Footer: React.FC = () => {
