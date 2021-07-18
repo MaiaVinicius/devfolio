@@ -1,7 +1,33 @@
 
 const skills = [
   {
-    "category": "frontend",
+    "category": "Backend",
+    "color": "rgb(211, 21, 21)",
+    "items": [
+        {
+          "name": "Node.js",
+          "isFavorite": true,
+          "level": 4
+        },
+        {
+          "name": "PHP",
+          "isFavorite": true,
+          "level": 5
+        },
+        {
+          "name": "GraphQL",
+          "isFavorite": false,
+          "level": 4
+        },
+        {
+          "name": "Python",
+          "isFavorite": false,
+          "level": 4
+        }
+    ]
+  },
+  {
+    "category": "Frontend",
     "color": "rgb(100, 207, 22)",
     "items": [
         {
@@ -35,7 +61,7 @@ const skills = [
     ]
   },
   {
-    "category": "infrastructure",
+    "category": "Infrastructure",
     "color": "rgb(66, 66, 66)",
     "items": [
         {
@@ -71,32 +97,6 @@ const skills = [
 
         {
           "name": "EC2",
-          "isFavorite": false,
-          "level": 4
-        }
-    ]
-  },
-  {
-    "category": "Backend",
-    "color": "rgb(211, 21, 21)",
-    "items": [
-        {
-          "name": "Node.js",
-          "isFavorite": true,
-          "level": 4
-        },
-        {
-          "name": "PHP",
-          "isFavorite": true,
-          "level": 5
-        },
-        {
-          "name": "GraphQL",
-          "isFavorite": false,
-          "level": 4
-        },
-        {
-          "name": "Python",
           "isFavorite": false,
           "level": 4
         }
