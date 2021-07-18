@@ -42,7 +42,7 @@ const HardSkillsSection = () => {
 
     return (
       <div>
-        <div>{category.category}</div>
+        <div className={styles.hardSkillGroup}>{category.category}</div>
       
         <HardSkills color={category.color} items={category.items}/>
       </div>
@@ -55,15 +55,22 @@ const SkillsSection: FC = () => {
     <section id="skills">
       <h1 className="section__title">Skills</h1>
 
+
+      <div>
+        <h3 className="section__subtitle">Soft Skills 💡</h3>
+
+        <SoftSkills/>
+      </div>
+
+      <h3 className="section__subtitle">Hard Skills 🚀</h3>
+
+
       <div className={styles.skillsIcons}>
       
         <HardSkillsSection/>
 
       </div>
 
-      <h3 className="section__title">Soft Skills</h3>
-
-      <SoftSkills/>
     </section>
   );
 };

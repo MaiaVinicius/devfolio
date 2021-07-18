@@ -7,6 +7,7 @@ import SkillsSection from "@sections/SkillsSection";
 import { ContactIcon, GitHubIcon, LinkedInIcon } from "@icons/about";
 import Seo from "@components/Seo";
 import mainStyles from "css/main.module.scss";
+import Typing from 'react-typing-animation';
 
 const Index: NextPage = () => {
   const age = calculateAge();
@@ -20,15 +21,52 @@ const Index: NextPage = () => {
 
   const monthsActive = age - startedAge;
 
+
   return (
     <>
       <main className={mainStyles.main} id="about">
         <Seo title="Vinicius Maia - Web Developer" />
 
-        <div className={mainStyles.mainTitle}>
-          <h1>I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.</h1>
-          <h2><u>Software engineer</u></h2>
-        </div>
+          <div className={mainStyles.mainTitle}>
+            <h1>
+            
+            <Typing speed={30} hideCursor={false}>
+              <div>
+                I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.
+
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace speed={20} count={30} />
+
+              </div>
+
+              <div>
+                I'm a <span className={mainStyles.textHighlight}> creative </span> mind.
+
+
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace speed={20} count={30}/>
+
+              </div>
+
+              <div>
+
+                <span>I'm a <span className={mainStyles.textHighlight}> entrepreneur</span>.</span>
+
+
+                <Typing.Delay ms={1000} />
+                <Typing.Backspace speed={20} count={30}/>
+
+              </div>
+
+              <div>
+                I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.
+              </div>
+
+            </Typing>
+            </h1>
+            
+            <h2><u>Software engineer</u></h2>
+          </div>
 
         <p className={mainStyles.mainText}>
           Hey there, I'm <i>Vinicius !</i> &nbsp;
@@ -45,7 +83,7 @@ const Index: NextPage = () => {
         </p>
 
         <div className={mainStyles.btnContainer}>
-          <a className="btn btn__light btn__icon" href={"mailto:"+process.env.NEXT_PUBLIC_EMAIL}>
+          <a className="btn btn__light btn__icon" href={"#contact"}>
             <ContactIcon />
             Contact
           </a>

@@ -1,3 +1,4 @@
+export const hardSkillGroup: string;
 export const lg: string;
 export const skillItem: string;
 export const skillsIcon: string;

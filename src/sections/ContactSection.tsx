@@ -71,7 +71,7 @@ const ContactSection: React.FC = () => {
     <section id="contact">
       {open ? <ContactModal onClose={() => setOpen(false)} options={response} /> : null}
       <h1 className="section__title">Contact me</h1>
-      <form data-netlify="true" method="POST">
+      <form id="contact" data-netlify="true" method="POST" action="/">
         <div className={styles.formGroup}>
           <label htmlFor="name">Enter your name</label>
           <input

@@ -1,10 +1,15 @@
 .skillsIcons {
   width: 100%;
   margin: 2rem 0;
-  display: grid;
+  display: flex;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(min(7.5rem), 8rem));
   align-items: center;
+}
+
+.hardSkillGroup{
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .skillsIcon {

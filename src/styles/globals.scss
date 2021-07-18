@@ -77,6 +77,14 @@ a {
   margin-bottom: 1rem;
 }
 
+.section__subtitle{
+
+  padding-top: 1rem;
+  font-size: clamp(2rem, 7vw, 1.5rem);
+  margin-bottom: 1rem;
+  // text-decoration: underline;
+}
+
 
 
 .btn {

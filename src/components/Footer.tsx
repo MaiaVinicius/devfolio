@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           {" "} © 2021
           </p>
           <p>
-            Built with {" "} React Native • Hosted on <a href="nerlify.com">Netlify</a> • Code on <a href="https://github.com/MaiaVinicius/maiavinicius.me">Github</a>.
+            Built with {" "} React Native • Hosted on <a href="netlify.com">Netlify</a> • Code on <a href="https://github.com/MaiaVinicius/maiavinicius.me">Github</a>.
           </p>
 
           <div>

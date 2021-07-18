@@ -7,5 +7,6 @@ export const container: string;
 export const content: string;
 export const disableScroll: string;
 export const next: string;
+export const sectionSubtitle: string;
 export const sectionTitle: string;
 export const srOnly: string;
