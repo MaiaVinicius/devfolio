@@ -35,7 +35,7 @@ const Index: NextPage = () => {
                 I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.
 
               <Typing.Delay ms={1000} />
-              <Typing.Backspace speed={20} count={30} />
+              <Typing.Backspace count={30} />
 
               </div>
 
@@ -44,7 +44,7 @@ const Index: NextPage = () => {
 
 
               <Typing.Delay ms={1000} />
-              <Typing.Backspace speed={20} count={30}/>
+              <Typing.Backspace count={30}/>
 
               </div>
 
@@ -54,7 +54,7 @@ const Index: NextPage = () => {
 
 
                 <Typing.Delay ms={1000} />
-                <Typing.Backspace speed={20} count={30}/>
+                <Typing.Backspace count={30}/>
 
               </div>
 
