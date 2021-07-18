@@ -12,9 +12,9 @@ interface Props {
 const DEFAULT_KEYWORDS = ["dev-maiavinicius.me", "Vinicius Maia", "ghostybot", "snaily cad"];
 
 const defaults: Props = {
-  title: "Vinicius Maia - Web Developer",
+  title: "Vinicius Maia - Software Engineer",
   url: "https://maiavinicius.me",
-  description: "Hi I'm Vinicius Maia! A Frontend Web Developer.",
+  description: "Hi I'm Vinicius Maia! A Software Engineer.",
   keywords: [],
 };
 

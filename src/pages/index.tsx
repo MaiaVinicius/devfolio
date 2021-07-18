@@ -25,7 +25,7 @@ const Index: NextPage = () => {
   return (
     <>
       <main className={mainStyles.main} id="about">
-        <Seo title="Vinicius Maia - Web Developer" />
+        <Seo title="Vinicius Maia - Software Engineer" />
 
           <div className={mainStyles.mainTitle}>
             <h1>
