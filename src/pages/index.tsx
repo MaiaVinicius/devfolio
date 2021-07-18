@@ -30,7 +30,7 @@ const Index: NextPage = () => {
           <div className={mainStyles.mainTitle}>
             <h1>
             
-            <Typing speed={30} hideCursor={false}>
+            <Typing speed={50} hideCursor={false}>
               <div>
                 I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.
 
