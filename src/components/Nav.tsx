@@ -49,7 +49,7 @@ const Nav: FC = () => {
         <div className={styles.navContent}>
           <h1 className={styles.navIcon}>
             <a href="/">
-            <span>{"<"}</span> Vinicius <span className={styles.navHidden}>Maia</span> <span className={styles.navHighlight}>{"/"}</span>{">"}
+            <span>{"<"}</span> Vini <span className={styles.navHidden}>Maia</span> <span className={styles.navHighlight}>{"/"}</span>{">"}
             </a>
           </h1>
 

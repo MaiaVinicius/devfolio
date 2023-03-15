@@ -32,7 +32,7 @@ const PostPage: NextPage<Props> = ({ snippet }) => {
       <Seo
         title={`${snippet.title} - MaiaVinicius's Code Snippets`}
         description={snippet.intro ?? undefined}
-        keywords={["code snippets", "snippets Vinicius Maia", ...keywords]}
+        keywords={["code snippets", "snippets Vini Maia", ...keywords]}
         url={`https://maiavinicius.me/snippets/${snippet.slug}`}
       />
       <Head>

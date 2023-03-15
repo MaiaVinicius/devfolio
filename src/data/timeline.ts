@@ -2,10 +2,32 @@ import TimelineItem from "types/Timeline";
 
 const timeline: TimelineItem[] = [
   {
-    date: "Apr / 2021",
+    date: "Apr / 2023",
     title: "CTO",
     highlight: true,
-    text: "Became the manager of the team. Managing demands and organizing processes.",
+    text: "",
+    company: "Doctoralia Brasil",
+    // full_date: "August 16, 2020",
+    tools: [
+      {
+        name: "Leadership"
+      },
+      {
+        name: "Integration"
+      },
+      {
+        name: "Go To Market"
+      },
+      {
+        name: "Team Building"
+      }
+    ]
+  },{
+    date: "Apr / 2021",
+    title: "Head of Information Technology",
+    highlight: true,
+    company: "Feegow",
+    text: "Manage multiple product squads. Managing demands and organizing processes.",
     // full_date: "August 16, 2020",
     tools: [
       {
@@ -22,7 +44,7 @@ const timeline: TimelineItem[] = [
   {
     date: "Mar / 2021",
     title: "Programming mentoring 👨‍🏫",
-    highlight: true,
+    highlight: false,
     text: "I created a mentoring program for people who were studying programming. The main topics was Web Development using javascript, CSS and HTML.",
     // full_date: "August 16, 2020",
     tools: [
@@ -51,6 +73,7 @@ const timeline: TimelineItem[] = [
     date: "Sep / 2020",
     title: "Tech Lead DevSecOps",
     highlight: true,
+    company: "Feegow",
     text: "Then I became more specialized in infrastructure and security.",
     tools: [
       {
@@ -217,7 +240,8 @@ const timeline: TimelineItem[] = [
   },
   {
     date: "Feb / 2019",
-    title: "Tech Lead",
+    title: "Tech Lead Role",
+    company: "Feegow",
     highlight: true,
     text: "Started in a position of team manager. Planning and designing projects, tasks and hiring new developers.",
     tools: [
@@ -234,7 +258,8 @@ const timeline: TimelineItem[] = [
   },
   {
     date: "Feb / 2019",
-    title: "Senior developer",
+    title: "Senior developer Role",
+    company: "Feegow",
     highlight: true,
     text: "Became a senior developer.",
     tools: [
@@ -272,6 +297,7 @@ const timeline: TimelineItem[] = [
   {
     date: "May / 2017",
     title: "Full stack developer",
+    company: "Feegow",
     highlight: true,
     text: "Developed applications used by doctors and patients.",
     tools: [
@@ -289,6 +315,7 @@ const timeline: TimelineItem[] = [
   {
     date: "Feb / 2016",
     title: "First project",
+    company: "Feegow",
     text: "Got an opportunity to build a Medical Appointment site using PHP, HTML, CSS AND jQuery (I learned a lot in practice).",
     tools: [
       {

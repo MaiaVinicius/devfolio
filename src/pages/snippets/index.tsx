@@ -14,7 +14,7 @@ const BlogPage: NextPage<Props> = ({ snippets }) => {
   return (
     <>
       <Seo
-        title="Code snippets - Vinicius Maia"
+        title="Code snippets - Vini Maia"
         description="Small code snippets that I have found useful"
         keywords={["code snippets", "code examples", "react hooks"]}
         url="https://maiavinicius.me/snippets"

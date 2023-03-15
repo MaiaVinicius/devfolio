@@ -9,12 +9,12 @@ interface Props {
 }
 
 // these should be displayed on all pages.
-const DEFAULT_KEYWORDS = ["dev-maiavinicius.me", "Vinicius Maia", "ghostybot", "snaily cad"];
+const DEFAULT_KEYWORDS = ["dev-maiavinicius.me", "Vini Maia", "ghostybot", "snaily cad"];
 
 const defaults: Props = {
-  title: "Vinicius Maia - Software Engineer",
+  title: "Vini Maia - Software Engineer",
   url: "https://maiavinicius.me",
-  description: "Hi I'm Vinicius Maia! A Software Engineer.",
+  description: "Hi I'm Vini Maia! A Software Engineer.",
   keywords: [],
 };
 

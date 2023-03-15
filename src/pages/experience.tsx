@@ -8,10 +8,10 @@ const ExperiencePage: NextPage = () => {
   return (
     <>
       <Seo
-        title="Experience - Vinicius Maia"
-        keywords={["MaiaVinicius experience", "experience Vinicius Maia"]}
+        title="Experience - Vini Maia"
+        keywords={["MaiaVinicius experience", "experience Vini Maia"]}
         url="https://maiavinicius.me/experience"
-        description="My experience - Vinicius Maia"
+        description="My experience - Vini Maia"
       />
 
       <div className={styles.header}>

@@ -70,6 +70,14 @@ const TimelineSection: React.FC = () => {
                     {item.date}
                   </p>
                 </header>
+
+                <div style={{
+                  fontSize: 14,
+                  marginBottom: 10
+                }}>
+                  {item.company}
+                </div>
+
                 <div className={styles.toolsSection}>
                   <Tools toolsList={item.tools}/>
                 </div>
