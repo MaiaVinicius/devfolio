@@ -9,6 +9,7 @@ const SoftSkills = () => {
   const softSkills = [
     "Strong communication",
     "Leadership",
+    "Proativity",
     "Problem solving",
     "Creative thinking",
     "Flexible and adaptative",
@@ -41,8 +42,8 @@ const HardSkillsSection = () => {
   return hardSkillsList.map((category) => {
 
     return (
-      <div>
-        <div className={styles.hardSkillGroup}>{category.category}</div>
+      <div className={styles.hardSkillGroup}>
+        <div className={styles.hardSkillTitle}>{category.category}</div>
       
         <HardSkills color={category.color} items={category.items}/>
       </div>
@@ -65,7 +66,7 @@ const SkillsSection: FC = () => {
       <h3 className="section__subtitle">Hard Skills 🚀</h3>
 
 
-      <div className={styles.skillsIcons}>
+      <div className={styles.skillsContainer}>
       
         <HardSkillsSection/>
 

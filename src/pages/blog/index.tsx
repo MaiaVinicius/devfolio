@@ -14,10 +14,10 @@ const BlogPage: NextPage<Props> = ({ posts }) => {
   return (
     <>
       <Seo
-        title="Blog - Vinicius Maia"
+        title="Blog - Vini Maia"
         url="https://maiavinicius.me/blog"
-        keywords={["blog Vinicius Maia", "maiavinicius.me blog"]}
-        description="My blog - Vinicius Maia"
+        keywords={["blog Vini Maia", "maiavinicius.me blog"]}
+        description="My blog - Vini Maia"
       />
       <h1>Blog posts</h1>
 

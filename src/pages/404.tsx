@@ -6,8 +6,8 @@ const Custom404: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Page Not Found • 404 - Vinicius Maia</title>
-        <meta property="og:title" content="Page Not Found - Vinicius Maia" />
+        <title>Page Not Found • 404 - Vini Maia</title>
+        <meta property="og:title" content="Page Not Found - Vini Maia" />
         <link rel="canonical" href="https://maiavinicius.me/404" />
       </Head>
       <div className={styles.container404}>

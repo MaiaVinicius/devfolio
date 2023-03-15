@@ -1,6 +1,32 @@
 
 const skills = [
   {
+    "category": "Business",
+    "color": "#F3D524",
+    "items": [
+        {
+          "name": "Strategy",
+          "isFavorite": true,
+          "level": 4
+        },
+        {
+          "name": "Data-driven Culture",
+          "isFavorite": true,
+          "level": 5
+        },
+        {
+          "name": "M&A",
+          "isFavorite": false,
+          "level": 4
+        },
+        {
+          "name": "SaaS",
+          "isFavorite": false,
+          "level": 4
+        }
+    ]
+  },
+  {
     "category": "Backend",
     "color": "rgb(211, 21, 21)",
     "items": [

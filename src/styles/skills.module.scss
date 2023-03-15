@@ -1,13 +1,14 @@
-.skillsIcons {
+.skillsContainer {
   width: 100%;
   margin: 2rem 0;
   display: flex;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(min(7.5rem), 8rem));
   align-items: center;
+  
 }
 
-.hardSkillGroup{
+.hardSkillTitle{
   font-weight: 600;
   font-size: 1.5em;
 }
@@ -85,6 +86,9 @@
       width: 5rem;
       height: 5rem;
     }
+  }
+  .hardSkillGroup{
+    width: 100%;
   }
 }
 

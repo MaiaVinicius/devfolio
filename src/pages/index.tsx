@@ -4,7 +4,7 @@ import TimelineSection from "@sections/TimelineSection";
 import ProjectSection from "@sections/ProjectsSection";
 import ContactSection from "@sections/ContactSection";
 import SkillsSection from "@sections/SkillsSection";
-import { ContactIcon, GitHubIcon, LinkedInIcon } from "@icons/about";
+import { ContactIcon, GitHubIcon, LinkedInIcon, InstagramIcon } from "@icons/about";
 import Seo from "@components/Seo";
 import mainStyles from "css/main.module.scss";
 import Typing from 'react-typing-animation';
@@ -25,14 +25,14 @@ const Index: NextPage = () => {
   return (
     <>
       <main className={mainStyles.main} id="about">
-        <Seo title="Vinicius Maia - Software Engineer" />
+        <Seo title="Vini Maia - CTO" />
 
           <div className={mainStyles.mainTitle}>
             <h1>
             
             <Typing speed={50} hideCursor={false}>
               <div>
-                I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.
+                I'm <span className={mainStyles.textHighlight}> Vini Maia</span>.
 
               <Typing.Delay ms={1000} />
               <Typing.Backspace count={30} />
@@ -59,25 +59,35 @@ const Index: NextPage = () => {
               </div>
 
               <div>
-                I'm <span className={mainStyles.textHighlight}> Vinicius Maia</span>.
+
+                <span>I'm a <span className={mainStyles.textHighlight}> problem solver</span>.</span>
+
+
+                <Typing.Delay ms={1000} />
+                <Typing.Backspace count={30}/>
+
+              </div>
+
+              <div>
+                I'm <span className={mainStyles.textHighlight}> Vini Maia</span>.
               </div>
 
             </Typing>
             </h1>
             
-            <h2><u>Software engineer</u></h2>
+            <h2><u>C-Level CTO</u></h2>
           </div>
 
         <p className={mainStyles.mainText}>
           Hey there, I'm <i>Vinicius !</i> &nbsp;
           
-          My main goal is to develop applications that solves <u>big humanity problems</u>, or to help others to achieve their goals 🚀.
+          My main goal is to solve <u>big problems</u> using technology 🚀.
           
           <br/>
           <br/>
 
           I live in Rio de Janeiro 🇧🇷 , <em>{age} years old</em> and dropped my first <em>"Hello World!"</em> 💻 at the age of {startedAge}. I'm a self taught
-          developer and I have been programming for <strong>~{monthsActive} years</strong> and still learning new technologies
+          developer, have been solving problems for <strong>~{monthsActive} years</strong> now and still learning new stuff
           every day. 
           
         </p>
@@ -105,6 +115,16 @@ const Index: NextPage = () => {
             <LinkedInIcon />
             LinkedIn
           </a>
+          {process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE_URL ? (<a
+            rel="noopener noreferrer"
+            target="_blank"
+            className="btn btn__light btn__icon"
+            href={process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE_URL}
+          >
+            <InstagramIcon />
+            Instagram
+          </a>): null}
+          
         </div>
 
       </main>

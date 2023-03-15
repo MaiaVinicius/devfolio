@@ -47,7 +47,7 @@ const MdHtml = () => {
   return (
     <div className={styles.mdHtmlContainer}>
       <Seo
-        title="Markdown to HTML/HTML to markdown converter - Vinicius Maia"
+        title="Markdown to HTML/HTML to markdown converter - Vini Maia"
         description="Convert Markdown to HTML or HTML to Markdown"
         url="https://maiavinicius.me/utils/md-html"
       />
