@@ -66,11 +66,6 @@ const Nav: FC = () => {
             <Link href={is404 ? "/#timeline" : "#timeline"}>
               <a className={styles.navLink}>Timeline</a>
             </Link>
-            <Link href={is404 ? "/#contact" : "#contact"}>
-              <a onClick={dispatch} className={styles.navLink}>
-                Contact
-              </a>
-            </Link>
             
           </div>
 

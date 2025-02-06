@@ -129,7 +129,7 @@ const skills = [
     ]
   },
   {
-    "category": "Storage / Databases",
+    "category": "Data",
     "color": "rgb(22, 113, 207)",
     "items": [
         {

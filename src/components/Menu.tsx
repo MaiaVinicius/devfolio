@@ -39,17 +39,13 @@ const Menu: FC = () => {
             <Link href={is404 ? "/#timeline" : "#timeline"}>
               <a className={styles.menuLink}>Timeline</a>
             </Link>
-            <Link href={is404 ? "/#contact" : "#contact"}>
-              <a onClick={dispatch} className={styles.menuLink}>
-                Contact
-              </a>
-            </Link>
-
+            
+{/* 
             <Link href="/experience">
               <a href="/experience" className={styles.menuLink}>
                 Experience
               </a>
-            </Link>
+            </Link> */}
 
           </div>
         </div>

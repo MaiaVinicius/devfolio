@@ -75,25 +75,20 @@ const Index: NextPage = () => {
             </Typing>
             </h1>
             
-            <h2><u>C-Level CTO</u></h2>
+            <h2><u>Software Engineering Leader</u></h2>
           </div>
 
         <p className={mainStyles.mainText}>
           Hey there, I'm <i>Vinicius !</i> &nbsp;
           
-          My main goal is to solve <u>big problems</u> using technology 🚀.
+          With <strong>9+ years of professional experience</strong>, I specialize in solving big problems using cutting-edge technology 🚀.  <br/> 
           
-          <br/>
-          <br/>
-
-          I live in Rio de Janeiro 🇧🇷 , <em>{age} years old</em> and dropped my first <em>"Hello World!"</em> 💻 at the age of {startedAge}. I'm a self taught
-          developer, have been solving problems for <strong>~{monthsActive} years</strong> now and still learning new stuff
-          every day. 
+          From designing AI-powered solutions that enhance healthcare efficiency to driving business growth through scalable SaaS applications passionate about using innovation to make a meaningful impact.
           
         </p>
 
         <div className={mainStyles.btnContainer}>
-          <a className="btn btn__light btn__icon" href={"#contact"}>
+          <a className="btn btn__light btn__icon" href={"mailto:"+process.env.NEXT_PUBLIC_EMAIL}>
             <ContactIcon />
             Contact
           </a>
@@ -115,7 +110,7 @@ const Index: NextPage = () => {
             <LinkedInIcon />
             LinkedIn
           </a>
-          {process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE_URL ? (<a
+          {/* {process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE_URL ? (<a
             rel="noopener noreferrer"
             target="_blank"
             className="btn btn__light btn__icon"
@@ -123,7 +118,7 @@ const Index: NextPage = () => {
           >
             <InstagramIcon />
             Instagram
-          </a>): null}
+          </a>): null} */}
           
         </div>
 
@@ -135,7 +130,7 @@ const Index: NextPage = () => {
 
       <TimelineSection />
 
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   );
 };

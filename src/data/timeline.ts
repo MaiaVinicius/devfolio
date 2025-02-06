@@ -2,16 +2,47 @@ import TimelineItem from "types/Timeline";
 
 const timeline: TimelineItem[] = [
   {
-    date: "Apr / 2023",
-    title: "CTO",
+    date: "Aug / 2024",
+    title: "AI Engineering Lead",
     highlight: true,
-    text: "",
-    company: "Doctoralia Brasil",
+    company: "Doctoralia",
     // full_date: "August 16, 2020",
+    text: `Led the development of an AI-powered medical assistant, reducing doctor workload by 20% and improving patient interactions through enhanced workflow automation.`,
     tools: [
       {
-        name: "Leadership"
+        name: "GenAI"
       },
+      {
+        name: "Data Strategy"
+      },
+      {
+        name: "Innovation"
+      }
+    ]
+  },{
+    date: "Feb / 2024",
+    title: "Product Tank Rio Organizer",
+    highlight: false,
+    company: "Mind the Product",
+    // full_date: "August 16, 2020",
+    text: `Organized the first Product Tank Rio meetup, bringing together product managers and designers to discuss the latest trends and best practices in product development.`,
+    tools: [
+      {
+        name: "Product Management"
+      },
+      {
+        name: "GenAI"
+      }
+    ]
+  },
+  {
+    date: "Aug / 2022",
+    title: "Director of Engienering",
+    highlight: false,
+    company: "Doctoralia",
+    // full_date: "August 16, 2020",
+    text: `Led the integration of Feegow and Doctoralia, increasing cross-sell win rates by 20% through optimized user flows and platform synergies while managing engineering teams to ensure scalable healthcare solutions.`,
+    tools: [
       {
         name: "Integration"
       },
@@ -22,23 +53,24 @@ const timeline: TimelineItem[] = [
         name: "Team Building"
       }
     ]
-  },{
-    date: "Apr / 2021",
-    title: "Head of Information Technology",
+  },
+  {
+    date: "Aug / 2021",
+    title: "CTO",
     highlight: true,
     company: "Feegow",
-    text: "Manage multiple product squads. Managing demands and organizing processes.",
     // full_date: "August 16, 2020",
+    text: `Led the scaling of Feegow’s technology stack, contributing to its acquisition by Docplanner. Optimized cloud infrastructure and deployment pipelines, reducing costs by 25%. Managed and mentored a 24-member engineering team, fostering technical excellence and innovation.`,
     tools: [
-      {
-        name: "Leadership"
-      },
       {
         name: "Agile"
       },
       {
-        name: "1:1"
+        name: "Leadership"
       },
+      {
+        name: "Cost Reduction"
+      }
     ]
   },
   {

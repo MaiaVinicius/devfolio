@@ -13,7 +13,8 @@ const SoftSkills = () => {
     "Problem solving",
     "Creative thinking",
     "Flexible and adaptative",
-    "Team player"
+    "Team player",
+    "Risk taker",
   ];
 
   return softSkills.map((skill)=> {
